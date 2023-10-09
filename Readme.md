@@ -1,9 +1,9 @@
 # DevSpotlight - A Multiplatform SwiftUI App
 
-![Screenshot 2023-10-10 at 1.50.31 AM](Screenshot 2023-10-10 at 1.50.31 AM.png)
+![macos](macos.png)
 
-| ![Screenshot 2023-10-10 at 1.52.32 AM](Screenshot 2023-10-10 at 1.52.32 AM.png) | ![Screenshot 2023-10-10 at 1.52.38 AM](Screenshot 2023-10-10 at 1.52.38 AM.png) | ![Screenshot 2023-10-10 at 1.53.04 AM](Screenshot 2023-10-10 at 1.53.04 AM.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![ios1](ios1.png) | ![ios2](ios2.png) | ![ios3](ios3.png) |
+| ----------------- | ----------------- | ----------------- |
 
 DevSpotlight is a multiplatform app that provides the latest tech news. It is built using SwiftUI and targets both macOS and iOS platforms. The app uses Supabase as its database to store and retrieve tech news articles. In order to set up the app, you will need to create a `Secrets.swift` file to securely store your Supabase host and API key.
 
