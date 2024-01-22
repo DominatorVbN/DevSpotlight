@@ -7,12 +7,49 @@
 
 import SwiftUI
 
+import SwiftUI
+import AuthenticationServices
+import Supabase
+import GoTrue
+
 struct AuthView: View {
+    @Environment(\.supabase) var supabase    
+    let onSuceess: (Session) -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        SignInWithAppleButton { request in
+            request.requestedScopes = [.email, .fullName]
+        } onCompletion: { result in
+            Task {
+                do {
+                    guard let credential = try result.get().credential as? ASAuthorizationAppleIDCredential
+                    else {
+                        return
+                    }
+                    
+                    guard let idToken = credential.identityToken
+                        .flatMap({ String(data: $0, encoding: .utf8) })
+                    else {
+                        return
+                    }
+                    let session = try await supabase.client.auth.signInWithIdToken(
+                        credentials: .init(
+                            provider: .apple,
+                            idToken: idToken
+                        )
+                    )
+                    onSuceess(session)
+                } catch {
+                    dump(error)
+                }
+            }
+        }
+        .fixedSize()
     }
 }
 
 #Preview {
-    AuthView()
+    AuthView { _ in
+        
+    }
 }

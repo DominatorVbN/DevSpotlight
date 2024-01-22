@@ -27,6 +27,21 @@ struct SidebarView: View {
                 }
             }
         }
+//        .toolbar(content: {
+//            Button {
+//                Task {
+//                    do {
+//                        try await supabase.client.auth.signOut()
+//                        supabase.session = nil
+//                    } catch {
+//                        print(error)
+//                    }
+//                }
+//            } label: {
+//                Text("Exit")
+//            }
+//
+//        })
     }
     
   var body: some View {

@@ -37,7 +37,7 @@ class SidebarViewModel: ObservableObject {
         self.state = .loading
         let query = supabase.client.database
             .from("SidebarSections")
-            .select(foreignTable: "SidebarOptions")
+            .select(columns: "*,SidebarOptions(*)")
         do {
             let result: PostgrestResponse<[SidebarSection]> = try await query.execute()
             print(result.underlyingResponse)

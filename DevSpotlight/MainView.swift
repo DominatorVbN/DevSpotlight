@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WebViewKit
 
 struct MainView: View {
     @State private var path = NavigationPath()
@@ -19,9 +18,13 @@ struct MainView: View {
                 .navigationTitle("Spotlight")
         } content: {
             if let selectedOption = selectedOption {
-                ContentView(selectedOption: selectedOption, selectedSpotlight: $selectedSpotlight.animation())
-                    .id(selectedOption)
-                    .navigationTitle(selectedOption.name)
+                if selectedOption.id == 3 {
+                    Text("Following")
+                } else {
+                    ContentView(selectedOption: selectedOption, selectedSpotlight: $selectedSpotlight.animation())
+                        .id(selectedOption)
+                        .navigationTitle(selectedOption.name)
+                }
             } else {
                 Text("Select any topic")
             }

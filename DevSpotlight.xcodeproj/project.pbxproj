@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282117802B5EA52C000C077A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821177F2B5EA52C000C077A /* WebView.swift */; };
+		289967D82ADC395D00AE19F9 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289967D72ADC395D00AE19F9 /* AuthView.swift */; };
+		289967DA2ADC521100AE19F9 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289967D92ADC521100AE19F9 /* KeychainHelper.swift */; };
+		28B0CE8B2AE0586400E068BB /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 28B0CE8A2AE0586400E068BB /* Supabase */; };
 		28E6520F2AD491FE00F9A20B /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6520E2AD491FE00F9A20B /* Secrets.swift */; };
 		28FB87542AD2A63B008B197C /* DevSpotlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87532AD2A63B008B197C /* DevSpotlightApp.swift */; };
 		28FB87562AD2A63B008B197C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87552AD2A63B008B197C /* MainView.swift */; };
@@ -16,12 +20,10 @@
 		28FB87722AD2A63D008B197C /* DevSpotlightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87712AD2A63D008B197C /* DevSpotlightUITests.swift */; };
 		28FB87742AD2A63D008B197C /* DevSpotlightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87732AD2A63D008B197C /* DevSpotlightUITestsLaunchTests.swift */; };
 		28FB878A2AD2FCF9008B197C /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87892AD2FCF9008B197C /* Supabase.swift */; };
-		28FB87A32AD30F23008B197C /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 28FB87A22AD30F23008B197C /* Supabase */; };
 		28FB87A62AD316B0008B197C /* SidebarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87A52AD316B0008B197C /* SidebarSection.swift */; };
 		28FB87A82AD316C8008B197C /* SidebarOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87A72AD316C8008B197C /* SidebarOption.swift */; };
 		28FB87AB2AD32463008B197C /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87AA2AD32463008B197C /* SidebarView.swift */; };
 		28FB87AD2AD32499008B197C /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87AC2AD32499008B197C /* SidebarViewModel.swift */; };
-		28FB87B02AD3DCC9008B197C /* WebViewKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28FB87AF2AD3DCC9008B197C /* WebViewKit */; };
 		28FB87B22AD3DD93008B197C /* Spotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87B12AD3DD93008B197C /* Spotlight.swift */; };
 		28FB87B72AD3DDC2008B197C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87B62AD3DDC2008B197C /* ContentView.swift */; };
 		28FB87B92AD3DE50008B197C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB87B82AD3DE50008B197C /* ContentViewModel.swift */; };
@@ -45,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2821177F2B5EA52C000C077A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		289967D72ADC395D00AE19F9 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		289967D92ADC521100AE19F9 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		28E6520E2AD491FE00F9A20B /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		28FB87502AD2A63B008B197C /* DevSpotlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevSpotlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FB87532AD2A63B008B197C /* DevSpotlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevSpotlightApp.swift; sourceTree = "<group>"; };
@@ -73,8 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28FB87A32AD30F23008B197C /* Supabase in Frameworks */,
-				28FB87B02AD3DCC9008B197C /* WebViewKit in Frameworks */,
+				28B0CE8B2AE0586400E068BB /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2821177E2B5EA51E000C077A /* WebViewKit */ = {
+			isa = PBXGroup;
+			children = (
+				2821177F2B5EA52C000C077A /* WebView.swift */,
+			);
+			path = WebViewKit;
+			sourceTree = "<group>";
+		};
+		289967D62ADC394800AE19F9 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				289967D72ADC395D00AE19F9 /* AuthView.swift */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
 		28FB87472AD2A63B008B197C = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +138,8 @@
 		28FB87522AD2A63B008B197C /* DevSpotlight */ = {
 			isa = PBXGroup;
 			children = (
+				2821177E2B5EA51E000C077A /* WebViewKit */,
+				289967D62ADC394800AE19F9 /* AuthView */,
 				28FB87B52AD3DDBB008B197C /* ContentView */,
 				28FB87A92AD3245D008B197C /* SidebarView */,
 				28FB87A42AD31662008B197C /* Models */,
@@ -129,6 +151,7 @@
 				28FB875C2AD2A63D008B197C /* Preview Content */,
 				28FB87892AD2FCF9008B197C /* Supabase.swift */,
 				28E6520E2AD491FE00F9A20B /* Secrets.swift */,
+				289967D92ADC521100AE19F9 /* KeychainHelper.swift */,
 			);
 			path = DevSpotlight;
 			sourceTree = "<group>";
@@ -203,8 +226,7 @@
 			);
 			name = DevSpotlight;
 			packageProductDependencies = (
-				28FB87A22AD30F23008B197C /* Supabase */,
-				28FB87AF2AD3DCC9008B197C /* WebViewKit */,
+				28B0CE8A2AE0586400E068BB /* Supabase */,
 			);
 			productName = DevSpotlight;
 			productReference = 28FB87502AD2A63B008B197C /* DevSpotlight.app */;
@@ -279,8 +301,7 @@
 			);
 			mainGroup = 28FB87472AD2A63B008B197C;
 			packageReferences = (
-				28FB87A12AD30F23008B197C /* XCRemoteSwiftPackageReference "supabase-swift" */,
-				28FB87AE2AD3DCC9008B197C /* XCRemoteSwiftPackageReference "WebViewKit" */,
+				28B0CE892AE0586400E068BB /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			productRefGroup = 28FB87512AD2A63B008B197C /* Products */;
 			projectDirPath = "";
@@ -326,15 +347,18 @@
 			files = (
 				28FB87B22AD3DD93008B197C /* Spotlight.swift in Sources */,
 				28FB87562AD2A63B008B197C /* MainView.swift in Sources */,
+				289967D82ADC395D00AE19F9 /* AuthView.swift in Sources */,
 				28FB878A2AD2FCF9008B197C /* Supabase.swift in Sources */,
 				28FB87A62AD316B0008B197C /* SidebarSection.swift in Sources */,
 				28FB87B92AD3DE50008B197C /* ContentViewModel.swift in Sources */,
 				28FB87542AD2A63B008B197C /* DevSpotlightApp.swift in Sources */,
 				28FB87B72AD3DDC2008B197C /* ContentView.swift in Sources */,
+				289967DA2ADC521100AE19F9 /* KeychainHelper.swift in Sources */,
 				28FB87AD2AD32499008B197C /* SidebarViewModel.swift in Sources */,
 				28FB87A82AD316C8008B197C /* SidebarOption.swift in Sources */,
 				28FB87AB2AD32463008B197C /* SidebarView.swift in Sources */,
 				28E6520F2AD491FE00F9A20B /* Secrets.swift in Sources */,
+				282117802B5EA52C000C077A /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +429,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -466,6 +491,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -493,6 +519,7 @@
 				CODE_SIGN_ENTITLEMENTS = DevSpotlight/DevSpotlight.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DevSpotlight/Preview Content\"";
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -514,13 +541,14 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = in.onesprint.DevSpotlight;
+				PRODUCT_BUNDLE_IDENTIFIER = in.amitsamant.DevSpotlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
@@ -532,6 +560,7 @@
 				CODE_SIGN_ENTITLEMENTS = DevSpotlight/DevSpotlight.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DevSpotlight/Preview Content\"";
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -553,13 +582,14 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = in.onesprint.DevSpotlight;
+				PRODUCT_BUNDLE_IDENTIFIER = in.amitsamant.DevSpotlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
 		};
@@ -570,6 +600,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = NWJALMT777;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -593,6 +624,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = NWJALMT777;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -615,6 +647,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = NWJALMT777;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -637,6 +670,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = NWJALMT777;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -695,34 +729,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		28FB87A12AD30F23008B197C /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+		28B0CE892AE0586400E068BB /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/DominatorVbN/supabase-swift.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		28FB87AE2AD3DCC9008B197C /* XCRemoteSwiftPackageReference "WebViewKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielsaidi/WebViewKit.git";
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.2;
+				minimumVersion = 0.3.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		28FB87A22AD30F23008B197C /* Supabase */ = {
+		28B0CE8A2AE0586400E068BB /* Supabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 28FB87A12AD30F23008B197C /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = 28B0CE892AE0586400E068BB /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Supabase;
-		};
-		28FB87AF2AD3DCC9008B197C /* WebViewKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28FB87AE2AD3DCC9008B197C /* XCRemoteSwiftPackageReference "WebViewKit" */;
-			productName = WebViewKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

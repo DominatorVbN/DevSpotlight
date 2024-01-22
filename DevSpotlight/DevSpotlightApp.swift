@@ -7,15 +7,22 @@
 
 import SwiftUI
 import SwiftData
+import Supabase
 
 @main
 struct DevSpotlightApp: App {
-    let supabase = Supabase()
+    @StateObject var supabase = Supabase()
     
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .environment(\.supabase, supabase)
+            if supabase.session != nil {
+                MainView()
+                    .environment(\.supabase, supabase)
+            } else {
+                AuthView { session in
+                    self.supabase.session = session
+                }
+            }
         }
     }
 }
